@@ -1,0 +1,60 @@
+{
+  "target": "https://example.com",
+  "final_url": "https://example.com/",
+  "status_code": 200,
+  "checked_at": "2026-10-24T08:55:46.171032+00:00",
+  "method": "GET with a test Origin header",
+  "cors_probe_origin": "https://cors-probe.example",
+  "response_headers": {
+    "Date": "Sat, 24 Oct 2026 08:55:54 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Server": "cloudflare",
+    "last-modified": "Sat, 24 Oct 2026 06:00:47 GMT",
+    "allow": "GET, HEAD",
+    "Age": "114",
+    "cf-cache-status": "HIT",
+    "Content-Encoding": "gzip",
+    "CF-RAY": "a4f7c3e7ec3dc766-BOM",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "findings": [
+    {
+      "severity": "INFO",
+      "title": "Content Security Policy (CSP) not observed",
+      "detail": "Helps limit script and content sources."
+    },
+    {
+      "severity": "INFO",
+      "title": "X-Content-Type-Options not observed",
+      "detail": "Set this to nosniff to reduce MIME-type confusion."
+    },
+    {
+      "severity": "INFO",
+      "title": "Referrer-Policy not observed",
+      "detail": "Controls how much referrer information browsers send."
+    },
+    {
+      "severity": "INFO",
+      "title": "Permissions-Policy not observed",
+      "detail": "Restricts browser features such as camera and microphone."
+    },
+    {
+      "severity": "INFO",
+      "title": "HSTS not observed",
+      "detail": "HTTPS sites commonly set Strict-Transport-Security."
+    },
+    {
+      "severity": "INFO",
+      "title": "Framing protection not observed",
+      "detail": "Use CSP frame-ancestors or X-Frame-Options if the site should not be embedded."
+    },
+    {
+      "severity": "PASS",
+      "title": "No CORS allow-origin header observed",
+      "detail": "The server did not advertise cross-origin access on the probe response."
+    }
+  ],
+  "note": "Automated checks are preliminary. Missing headers are not proof of a vulnerability; confirm against the application's requirements."
+}

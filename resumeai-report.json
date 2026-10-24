@@ -1,0 +1,62 @@
+{
+  "target": "https://resumeai-optimizer.ai.studio/",
+  "fin
+al_url": "https://resumeai-optimizer.ai.studio/",
+  "status_code": 200,
+  "checked_at": "2026-10-24T09:05:20.559452+00:00",
+  "method": "GET with a test Origin header",
+  "cors_probe_origin": "https://cors-probe.example",
+  "response_headers": {
+    "x-powered-by": "Express",
+    "accept-ranges": "bytes",
+    "Cache-Control": "private, max-age=0",
+    "last-modified": "Thu, 08 Oct 2026 02:10:32 GMT",
+    "etag": "W/\"3c2-1a11946c9c0\"",
+    "content-type": "text/html; charset=UTF-8",
+    "x-cloud-trace-context": "85b7a65b7e06d84660efb613a5abed60;o=1",
+    "set-cookie": "GAESA=CsABMDAxMGRkODYwNzdhZjliODI3ODMxMjEyOGQ5ZjE1N2E0ODVjNTE0ODVkMGY5MTk3OTg5ZjI1NTAxZjc5ZTU2NGRkNmNhODdkNTdhNWM2Y2Q2ZTYwYTMzNjQzYTgxMjg3Njg4M2MwNTEyMzQ0YmYwNDExMDExNzVmYmMwY2E0YzM3MzAyZjY3ZjYxZmI1M2VlYTM4ZjgzMmQwMDNjMWNkNTkxNWQ3YmUxZDRhYzhjZDg2NjI3ZTlkMTc1MjY3NzIzEP_goemWNA; expires=Mon, 23-Nov-2026 09:05:29 GMT; path=/",
+    "date": "Sat, 24 Oct 2026 09:05:29 GMT",
+    "server": "Google Frontend",
+    "Content-Length": "962",
+    "Expires": "Sat, 24 Oct 2026 09:05:29 GMT",
+    "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+  },
+  "findings": [
+    {
+      "severity": "INFO",
+      "title": "Content Security Policy (CSP) not observed",
+      "detail": "Helps limit script and content sources."
+    },
+    {
+      "severity": "INFO",
+      "title": "X-Content-Type-Options not observed",
+      "detail": "Set this to nosniff to reduce MIME-type confusion."
+    },
+    {
+      "severity": "INFO",
+      "title": "Referrer-Policy not observed",
+      "detail": "Controls how much referrer information browsers send."
+    },
+    {
+      "severity": "INFO",
+      "title": "Permissions-Policy not observed",
+      "detail": "Restricts browser features such as camera and microphone."
+    },
+    {
+      "severity": "INFO",
+      "title": "HSTS not observed",
+      "detail": "HTTPS sites commonly set Strict-Transport-Security."
+    },
+    {
+      "severity": "INFO",
+      "title": "Framing protection not observed",
+      "detail": "Use CSP frame-ancestors or X-Frame-Options if the site should not be embedded."
+    },
+    {
+      "severity": "PASS",
+      "title": "No CORS allow-origin header observed",
+      "detail": "The server did not advertise cross-origin access on the probe response."
+    }
+  ],
+  "note": "Automated checks are preliminary. Missing headers are not proof of a vulnerability; confirm against the application's requirements."
+}

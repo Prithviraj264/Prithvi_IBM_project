@@ -1,0 +1,55 @@
+{
+  "target": "https://httpbin.org",
+  "final_url": "https://httpbin.org/",
+  "status_code": 200,
+  "checked_at": "2026-10-24T08:58:23.455627+00:00",
+  "method": "GET with a test Origin header",
+  "cors_probe_origin": "https://cors-probe.example",
+  "response_headers": {
+    "Date": "Sat, 24 Oct 2026 08:58:31 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Content-Length": "9593",
+    "Connection": "keep-alive",
+    "Server": "gunicorn/19.9.0",
+    "Access-Control-Allow-Origin": "https://cors-probe.example",
+    "Access-Control-Allow-Credentials": "true"
+  },
+  "findings": [
+    {
+      "severity": "INFO",
+      "title": "Content Security Policy (CSP) not observed",
+      "detail": "Helps limit script and content sources."
+    },
+    {
+      "severity": "INFO",
+      "title": "X-Content-Type-Options not observed",
+      "detail": "Set this to nosniff to reduce MIME-type confusion."
+    },
+    {
+      "severity": "INFO",
+      "title": "Referrer-Policy not observed",
+      "detail": "Controls how much referrer information browsers send."
+    },
+    {
+      "severity": "INFO",
+      "title": "Permissions-Policy not observed",
+      "detail": "Restricts browser features such as camera and microphone."
+    },
+    {
+      "severity": "INFO",
+      "title": "HSTS not observed",
+      "detail": "HTTPS sites commonly set Strict-Transport-Security."
+    },
+    {
+      "severity": "INFO",
+      "title": "Framing protection not observed",
+      "detail": "Use CSP frame-ancestors or X-Frame-Options if the site should not be embedded."
+    },
+    {
+      "severity": "HIGH",
+      "title": "Untrusted origin reflected with credentials",
+      "detail": "The response allowed the scanner's unrelated origin and enabled credentials. Confirm with the application owner."
+    }
+  ],
+  "note": "Automated checks are preliminary. Missing headers are not proof of a vulnerability; confirm against the application's requirements."
+}
