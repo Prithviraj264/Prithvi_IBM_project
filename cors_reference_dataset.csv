@@ -1,0 +1,6 @@
+case_id,allow_origin,allow_credentials,expected_interpretation,notes
+CORS-01,,false,No CORS allow-origin observed,No cross-origin sharing advertised on this response
+CORS-02,*,false,Permissive public read possibility,May be intentional for public resources
+CORS-03,*,true,Invalid browser credential combination,Browsers reject wildcard origin with credentials
+CORS-04,https://cors-probe.example,true,High risk reflected untrusted origin,Manual validation needed against sensitive authenticated resources
+CORS-05,https://app.example,false,Specific origin allowlisted,Compare against approved trusted origins
